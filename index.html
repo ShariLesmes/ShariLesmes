@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ✏️ Cambia el título y la descripción de tu web -->
+  <title>TU MARCA | Moda y accesorios</title>
+  <meta name="description" content="TU MARCA – moda contemporánea con diseño cuidado y materiales nobles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== BARRA DE AVISO ===================== -->
+  <div class="announcement">
+    <p>Envío gratuito en pedidos superiores a 150 €</p>
+  </div>
+
+  <!-- ===================== CABECERA ===================== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav nav--left" id="nav">
+        <a href="#novedades">Novedades</a>
+        <div class="nav__dropdown">
+          <a href="#tienda">Tienda</a>
+          <div class="nav__submenu">
+            <a href="#tienda">Ropa</a>
+            <a href="#tienda">Calzado</a>
+            <a href="#tienda">Bolsos y accesorios</a>
+          </div>
+        </div>
+        <a href="#sobre-nosotros">Sobre nosotros</a>
+      </nav>
+
+      <!-- ✏️ Cambia el nombre de tu marca (o pon tu logo: <img src="images/logo.png" alt="TU MARCA">) -->
+      <a href="#" class="logo">TU MARCA</a>
+
+      <div class="nav nav--right">
+        <span class="nav__meta">ES / EUR</span>
+        <button class="icon-btn" id="searchOpen" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" id="cartOpen" aria-label="Carrito">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== PORTADA: 2 COLECCIONES ===================== -->
+    <!-- ✏️ Cambia las imágenes: pon tus fotos en la carpeta "images" y usa src="images/tu-foto.jpg" -->
+    <section class="hero" id="novedades">
+      <a href="#tienda" class="hero__item reveal">
+        <img src="https://picsum.photos/seed/moda-portada-1/1200/1600" alt="Nuevas llegadas">
+        <h2 class="hero__title">Novedades</h2>
+      </a>
+      <a href="#tienda" class="hero__item reveal">
+        <img src="https://picsum.photos/seed/moda-portada-2/1200/1600" alt="Bolsos y accesorios">
+        <h2 class="hero__title">Bolsos y accesorios</h2>
+      </a>
+    </section>
+
+    <!-- ===================== PRODUCTOS ===================== -->
+    <!-- ✏️ Para añadir un producto, copia un bloque <article>...</article> completo y cambia los datos -->
+    <section class="products" id="tienda">
+      <div class="products__grid">
+
+        <article class="product reveal">
+          <a href="#" class="product__media">
+            <img src="https://picsum.photos/seed/producto-1a/800/1067" alt="Camisa Sol">
+            <img class="product__hover" src="https://picsum.photos/seed/producto-1b/800/1067" alt="">
+          </a>
+          <div class="product__info">
+            <h3>Camisa Sol</h3>
+            <p class="product__price">390,00 €</p>
+          </div>
+          <button class="product__add" data-name="Camisa Sol">Añadir</button>
+        </article>
+
+        <article class="product reveal">
+          <a href="#" class="product__media">
+            <img src="https://picsum.photos/seed/producto-2a/800/1067" alt="Top Brisa">
+            <img class="product__hover" src="https://picsum.photos/seed/producto-2b/800/1067" alt="">
+          </a>
+          <div class="product__info">
+            <h3>Top Brisa</h3>
+            <p class="product__price">230,00 €</p>
+          </div>
+          <button class="product__add" data-name="Top Brisa">Añadir</button>
+        </article>
+
+        <article class="product reveal">
+          <a href="#" class="product__media">
+            <img src="https://picsum.photos/seed/producto-3a/800/1067" alt="Chaqueta bordada">
+            <img class="product__hover" src="https://picsum.photos/seed/producto-3b/800/1067" alt="">
+          </a>
+          <div class="product__info">
+            <h3>Chaqueta bordada</h3>
+            <p class="product__price">530,00 €</p>
+          </div>
+          <button class="product__add" data-name="Chaqueta bordada">Añadir</button>
+        </article>
+
+        <article class="product reveal">
+          <a href="#" class="product__media">
+            <img src="https://picsum.photos/seed/producto-4a/800/1067" alt="Pantalón fluido">
+            <img class="product__hover" src="https://picsum.photos/seed/producto-4b/800/1067" alt="">
+          </a>
+          <div class="product__info">
+            <h3>Pantalón fluido</h3>
+            <p class="product__price">310,00 €</p>
+          </div>
+          <button class="product__add" data-name="Pantalón fluido">Añadir</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== IMÁGENES EDITORIALES ===================== -->
+    <section class="editorial">
+      <a href="#tienda" class="editorial__item reveal">
+        <img src="https://picsum.photos/seed/editorial-1/1200/1600" alt="Colección otoño">
+      </a>
+      <a href="#tienda" class="editorial__item reveal">
+        <img src="https://picsum.photos/seed/editorial-2/1200/1600" alt="Retrato de la colección">
+      </a>
+    </section>
+
+    <!-- ===================== NEWSLETTER ===================== -->
+    <section class="newsletter reveal">
+      <h2>Únete a nuestra lista</h2>
+      <p>Recibe acceso anticipado a nuevas colecciones y ofertas exclusivas.</p>
+      <!-- ✏️ Para recibir los emails de verdad, mira el README (Formspree) -->
+      <form class="newsletter__form" id="newsletterForm" action="#" method="POST">
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit" aria-label="Suscribirse">→</button>
+      </form>
+      <p class="newsletter__msg" id="newsletterMsg"></p>
+    </section>
+
+    <!-- ===================== VALORES DE MARCA ===================== -->
+    <section class="values" id="sobre-nosotros">
+      <div class="value reveal">
+        <h3>Diseño con intención</h3>
+        <p>Cada pieza nace con un propósito: líneas limpias y materiales honestos.</p>
+      </div>
+      <div class="value reveal">
+        <h3>Calidad ante todo</h3>
+        <p>Cuidamos cada detalle, desde el patrón hasta la última costura.</p>
+      </div>
+      <div class="value reveal">
+        <h3>Atención cercana</h3>
+        <p>Estamos aquí para ayudarte antes, durante y después de tu compra.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div>
+        <h4>Información legal</h4>
+        <ul>
+          <li><a href="#">Política de devoluciones</a></li>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Condiciones de venta</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <!-- ✏️ Pon el enlace de tu Instagram -->
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> TU MARCA</p>
+  </footer>
+
+  <!-- ===================== BUSCADOR ===================== -->
+  <div class="overlay" id="searchOverlay">
+    <div class="search">
+      <input type="search" id="searchInput" placeholder="Buscar productos…">
+      <button class="icon-btn" id="searchClose" aria-label="Cerrar">✕</button>
+    </div>
+  </div>
+
+  <!-- ===================== CARRITO LATERAL ===================== -->
+  <aside class="drawer" id="cartDrawer">
+    <div class="drawer__head">
+      <h3>Tu carrito</h3>
+      <button class="icon-btn" id="cartClose" aria-label="Cerrar">✕</button>
+    </div>
+    <ul class="drawer__list" id="cartList"></ul>
+    <p class="drawer__empty" id="cartEmpty">Tu carrito está vacío.</p>
+    <a href="#tienda" class="btn" id="cartContinue">Seguir comprando</a>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
